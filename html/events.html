@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events | Brandon Scene</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff; }
+    .container { width: 90%; max-width: 1000px; margin: 0 auto; padding: 20px; }
+    .section-title { color: #800020; font-size: 2rem; text-align: center; margin-bottom: 30px; }
+    ol li { margin-bottom: 10px; font-size: 1.1rem; }
+    ol a { color: #800020; text-decoration: none; }
+    ol a:hover { text-decoration: underline; }
+
+    .event-block {
+      margin-bottom: 60px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+    }
+
+    .event-block h3 {
+      font-size: 1.3rem;
+      color: #800020;
+    }
+
+    .event-block img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+
+    .event-block p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .event-block a {
+      color: #800020;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .event-block a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #800020;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #800020;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      margin-top: 40px;
+    }
+  
+.explore-links {
+  background-color: #1f1f2f;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid #ff00cc;
+}
+.explore-links h3 {
+  color: #ff00cc;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.explore-links ul {
+  list-style: none;
+  padding: 0;
+}
+.explore-links ul li {
+  margin: 10px 0;
+}
+.explore-links ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.explore-links ul li a:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 6px #ff00cc;
+}
+
+</style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2515DYERC0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2515DYERC0');
+</script>
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">BRANDON SCENE</a></h1>
+  <ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="index.html#explore">Explore</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section class="container">
+  <h2 class="section-title">Top Events in Brandon – May 2025</h2>
+<!-- Submit Event CTA -->
+<div style="text-align: center; margin: 40px 0;">
+  <a href="submit-event.html" style="background-color: #800020; color: white; padding: 14px 28px; font-size: 1.2rem; text-decoration: none; border-radius: 6px; font-weight: bold;">
+    📤 Submit Your Event
+  </a>
+</div>
+
+
+  <ol>
+    <li><a href="#event3">Brandon Rock N' Gem Show</a></li>
+    <li><a href="#event4">AGSM Art Auction 2025</a></li>
+    <li><a href="#event5">Apple + Pine Spring Market</a></li>
+    <li><a href="#event6">Drinking Habits Dinner Theatre Fundraiser</a></li>
+    <li><a href="#event7">Waylon, Willie, and Cash Tribute</a></li>
+    <li><a href="#event8">Girls Night Out: Brandon</a></li>
+    <li><a href="#event9">Lisa Brokop's Patsy Cline Tribute & Hank Lives</a></li>
+    <li><a href="#event10">Mindfulness 101</a></li>
+    <li><a href="#event11">Duck Identification Workshop</a></li>
+    <li><a href="#event12">Buds and Blossoms Dressage Show</a></li>
+    <li><a href="#event13">PBR Canada Cup Series</a></li>
+    <li><a href="#event14">ALL WHITE PARTY 2.0 </a></li>
+  </ol>
+
+  <div id="event3" class="event-block">
+    <h3>Brandon Rock N' Gem Show</h3>
+    <img src="images/rock-n-gem.png" alt="Rock N Gem Show">
+    <p>LOC: Keystone Centre</p>
+    <p> Date: May 2nd- May 4th, 2025 .<p>
+    <p>Explore a vast collection of crystals, minerals, and fossils.</p>
+  </div>
+
+  <div id="event4" class="event-block">
+    <h3>AGSM Art Auction 2025</h3>
+    <img src="images/agsm-auction.png" alt="AGSM Auction">
+    <p>LOC: AGSM</p>
+    <p> Date: May 8th, 2025 .</p>
+    <p>Support the arts at the Art Gallery of Southwestern Manitoba's annual auction.</p>
+  </div>
+
+  <div id="event5" class="event-block">
+    <h3>Apple + Pine Spring Market</h3>
+    <img src="images/spring-market.jpg" alt="Spring Market">
+    <p>LOC: Grand salon at Victoria Inn Brandon</p>
+    <p> Date: May 4th, 2025 .</p>
+    <p>Discover local artisans and their handcrafted goods.</p>
+  </div>
+
+  <div id="event6" class="event-block">
+    <h3>Drinking Habits Dinner Theatre Fundraiser</h3>
+    <img src="images/dinner-theatre.jpg" alt="Dinner Theatre">
+    <p>LOC: 1005 Assiniboine Ave</p>
+    <p> Date: May 10th, 2025 .</p>
+    <p>Enjoy a comedic play while supporting a good cause.</p>
+  </div>
+
+  <div id="event7" class="event-block">
+    <h3>Waylon, Willie, and Cash Tribute</h3>
+    <img src="images/highwaymen.jpg" alt="Highwaymen Tribute">
+    <p>LOC: 205 20th Street</p>
+    <p> Date: May 3rd, 2025 .</p>
+    <p>Experience a musical homage to country legends.</p>
+  </div>
+
+  <div id="event8" class="event-block">
+    <h3>Girls Night Out: Brandon</h3>
+    <img src="images/girls-night.jpg" alt="Girls Night">
+    <p>LOC: Calvary Temple Brandon</p>
+    <p> Date: May 8th, 2025 .</p>
+    <p>An evening of entertainment and empowerment.</p>
+  </div>
+
+  <div id="event9" class="event-block">
+    <h3>Lisa Brokop's Patsy Cline Tribute & Hank Lives</h3>
+    <img src="images/lisa-brokop.jpg" alt="Patsy Cline Tribute">
+    <p>LOC: Western Manitoba Centennial Auditorium</p>
+    <p> Date: May 11th, 2025 .</p>
+    <p>Relive classic country hits in this tribute performance.</p>
+  </div>
+
+  <div id="event10" class="event-block">
+    <h3>Mindfulness 101</h3>
+    <img src="images/mindfulness.png" alt="Mindfulness 101">
+    <p>LOC: Western Manitoba Regional Library, 710 Rosser Avenue & Shoppers Mall Library, Brandon, MB</p>
+    <p> Date: May 7th-28th, 2025 .</p>
+    <p>Participate in weekly sessions to enhance mental well-being.</p>
+  </div>
+
+  <div id="event11" class="event-block">
+    <h3>Duck Identification Workshop</h3>
+    <img src="images/duck-id.jpg" alt="Duck ID Workshop">
+    <p>LOC:</strong> Brodie Building Rm 4-34, Brandon University & Online</p>
+    <p>Learn about local waterfowl species with expert Jackie Dixon.</p>
+    <p><strong>📅 Date:</strong> 15th May, 2025 at 07:00 pm</p>
+  </div>
+
+  <div id="event12" class="event-block">
+    <h3>Buds and Blossoms Dressage Show</h3>
+    <img src="images/dressage.jpeg" alt="Dressage Show">
+    <p>LOC: Keystone Centre</p>
+    <p> Date: May 2nd-4th, 2025 .</p>
+    <p>Witness elegant equestrian performances.</p>
+  </div>
+
+  <div id="event13" class="event-block">
+    <h3>PBR Canada Cup Series</h3>
+    <img src="images/pbr.jpg" alt="PBR Series">
+    <p>LOC: Westoba Place, Keystone Centre</p>
+    <p> Date: May 23rd, 2025 at 7:00pm</p>
+    <p>Experience the thrill of professional bull riding.</p>
+  </div>
+
+  <div id="event14" class="event-block">
+    <h3>ALL WHITE PARTY 2.0</h3>
+    <img src="images/allwhiteparty.png" alt="allwhiteparty">
+    <p>LOC: The Guinness tavern 943 Rosser Ave, Brandon.</p>
+    <p> Date: May 24th, 2025 .</p>
+    <p>Experience the Underground party.</p>
+  </div>
+
+</section>
+
+
+
+
+<!-- Desktop Sidebar CTA -->
+<div id="adSidebar">
+  <h4>📣 Promote Your Business</h4>
+  <p>Reach locals on Brandon Scene!</p>
+  <a href="submit-ad.html" target="_blank">Submit Ad →</a>
+</div>
+
+<!-- Mobile Bottom CTA -->
+<div id="mobileAdCTA">
+  <a href="submit-ad.html">📣 Submit Your Ad</a>
+</div>
+
+<style>
+#adSidebar {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 220px;
+  background: #ffffff;
+  color: #1f1f2f;
+  border: 2px solid #00cc66;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+#adSidebar h4 {
+  margin: 0 0 5px;
+  color: #800020;
+  font-size: 1rem;
+}
+#adSidebar p {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+}
+#adSidebar a {
+  display: inline-block;
+  background-color: #00cc66;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+#adSidebar a:hover {
+  background-color: #00994d;
+}
+
+#mobileAdCTA {
+  display: none;
+}
+@media (max-width: 768px) {
+  #adSidebar {
+    display: none;
+  }
+  #mobileAdCTA {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #00cc66;
+    text-align: center;
+    padding: 12px 0;
+    z-index: 1000;
+  }
+  #mobileAdCTA a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+</style>
+
+  <h3 style="color:#800020; font-size:1.2rem;">📣 Promote Your Business</h3>
+  <p style="font-size:0.95rem;">Get featured on Brandon Scene. Submit your ad today and reach the local crowd!</p>
+  <a href="submit-ad.html" style="color:#fff; background:#00cc66; padding:8px 12px; text-decoration:none; border-radius:6px; display:inline-block; margin-top:10px;">Submit Ad →</a>
+</div>
+
+
+<section class="explore-links">
+  <h3>Keep Exploring Brandon Scene</h3>
+  <ul>
+    <li><a href="thingstodo.html">Top Things to Do in Brandon</a></li>
+    <li><a href="events.html">Upcoming Events</a></li>
+    <li><a href="brandon-nightlife.html">Nightlife</a></li>
+    <li><a href="flagship-events.html">Flagship Events</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Brandon Scene. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

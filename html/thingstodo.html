@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Things to Do in Brandon</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+    .location-block {
+      margin-bottom: 50px;
+    }
+    .location-block h3 {
+      color: #800020;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .location-block img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .location-block p {
+      font-size: 1rem;
+      color: #333;
+    }
+    .location-block a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #800020;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .location-block a:hover {
+      text-decoration: underline;
+    }
+
+    /* Slideshow Styles */
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: 20px 0;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+  
+.explore-links {
+  background-color: #1f1f2f;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid #ff00cc;
+}
+.explore-links h3 {
+  color: #ff00cc;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.explore-links ul {
+  list-style: none;
+  padding: 0;
+}
+.explore-links ul li {
+  margin: 10px 0;
+}
+.explore-links ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.explore-links ul li a:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 6px #ff00cc;
+}
+
+</style>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-838589922628965"
+     crossorigin="anonymous"></script>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2515DYERC0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2515DYERC0');
+</script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Brandon Scene</a></h1>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="index.html#explore">Explore</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Top Things to Do in Brandon</h2>
+    <p>Whether you're new to Brandon or a longtime resident, here's a curated list of must-visit destinations that showcase the city's vibrant culture, entertainment, and community spirit.</p>
+
+    <div class="location-block">
+      <h3>Art Gallery of Southwestern Manitoba (AGSM)</h3>
+      <img src="images/art-exhibition.jpg" alt="AGSM">
+      <p>The AGSM features rotating exhibitions from local and national artists, creative workshops, and public programming for all ages.</p>
+      <a href="https://agsm.ca/" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>Downtown Brandon & Shoppers Mall</h3>
+      <img src="images/shoppers-mall.png" alt="Shoppers Mall">
+      <p>Explore a mix of local boutiques and national retail stores. From cafes to bookshops, downtown Brandon offers a charming experience for every shopper.</p>
+      <a href="https://shoppersmallbrandon.com/" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>T-Birds Food Fun Games</h3>
+      <div class="slideshow-container">
+        <img class="slide" src="images/tbirds1.jpg" alt="T-Birds Slide 1">
+        <img class="slide" src="images/tbirds2.jpg" alt="T-Birds Slide 2">
+        <img class="slide" src="images/tbirds4.jpg" alt="T-Birds Slide 3">
+        <img class="slide" src="images/tbirds3.jpg" alt="T-Birds Slide 4">
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <button class="next" onclick="plusSlides(1)">❯</button>
+      </div>
+      <p>A fun-filled entertainment center for all ages, featuring arcade games, bowling, food, and a great social vibe perfect for group outings or family nights.</p>
+      <a href="https://www.t-birds.ca/" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>Brandon Public Library</h3>
+      <img src="images/brandon-library.jpg" alt="Brandon Library">
+      <p>From books and digital resources to quiet study spaces and community events, the Brandon Public Library is a hub for learning and exploration.</p>
+      <a href="https://wmrl.ca/" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>Escape the Final Countdown</h3>
+      <img src="images/esacape-room.jpg" alt="Escape Room">
+      <p>Brandon’s local escape room delivers immersive challenges and puzzles with changing storylines. Ideal for teams and thrill seekers.</p>
+      <a href="https://https://ca.worldofescapes.com/brandon" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>Landmark Cinemas</h3>
+      <img src="images/landmark-cinema.jpg" alt="Landmark Cinemas">
+      <p>Watch the latest blockbusters in comfort with reserved seating, recliners, and a full snack bar. A go-to for movie lovers in Brandon.</p>
+      <a href="https://www.landmarkcinemas.com/showtimes/brandon/" target="_blank">Visit Website</a>
+    </div>
+
+    <div class="location-block">
+      <h3>Riverbank Discovery Centre</h3>
+      <div class="slideshow-container">
+        <img class="slide-riverbank" src="images/river-bank1.jpg" alt="Riverbank Discovery 1">
+        <img class="slide-riverbank" src="images/river-bank2.jpg" alt="Riverbank Discovery 2">
+        <img class="slide-riverbank" src="images/river-bank3.jpg" alt="Riverbank Discovery 3">
+        <button class="prev" onclick="plusSlidesRiverbank(-1)">❮</button>
+        <button class="next" onclick="plusSlidesRiverbank(1)">❯</button>
+      </div>
+      <p>Brandon's hub for outdoor exploration and tourism, the Riverbank Discovery Centre offers scenic walking trails, wildlife viewing, paddle rentals, and visitor information year-round.</p>
+      <a href="https://riverbank.mb.ca" target="_blank">Visit Website</a>
+    </div>
+        
+    <div class="location-block">
+      <h3>Brandon Hills Wildlife Management Area</h3>
+      <img src="images/brandon-hills.jpg" alt="Brandon Hills Trails">
+      <p>A top spot for hikers, runners, skiers, and nature lovers. The Brandon Hills offer wooded trails and beautiful views, perfect for outdoor adventures in every season.
+        The trails are made up of loops ranging from 2.5 km to 7.5 km. The Brandon Hills is located 10 kilometres south of Brandon on Highway 10, three kilometres east on Beresford Road and one kilometre south.
+      </p>
+      <p>📍 Location:</strong> 10 km south on 17th Street East, Brandon</p>
+      <p>Contact: 800-214-6497</p>
+    </div>
+    
+    <div class="location-block">
+      <h3>Brandon General Museum & Archives (BGMA)</h3>
+      <img src="images/brandon-museum.png" alt="Brandon General Museum">
+      <p>The Brandon General Museum & Archives preserves and showcases the rich history of Brandon through exhibits, artifacts, and archives. It’s a must-visit for those interested in the city’s heritage and cultural evolution.</p>
+      <a href="http://brandongeneralmuseum.ca/" target="_blank">Visit Website</a>
+    </div>
+    
+
+  </div>
+</section>
+
+
+<section class="explore-links">
+  <h3>Keep Exploring Brandon Scene</h3>
+  <ul>
+    <li><a href="thingstodo.html">Top Things to Do in Brandon</a></li>
+    <li><a href="events.html">Upcoming Events</a></li>
+    <li><a href="brandon-nightlife.html">Nightlife</a></li>
+    <li><a href="flagship-events.html">Flagship Events</a></li>
+  </ul>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Brandon Scene. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+  showSlides();
+
+  function showSlides() {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === slideIndex ? "block" : "none";
+    });
+  }
+
+  function plusSlides(n) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlides();
+  }
+
+  // Riverbank Slideshow Script
+  let slideIndexRiverbank = 0;
+  const slidesRiverbank = document.querySelectorAll(".slide-riverbank");
+  showSlidesRiverbank();
+
+  function showSlidesRiverbank() {
+    slidesRiverbank.forEach((slide, i) => {
+      slide.style.display = i === slideIndexRiverbank ? "block" : "none";
+    });
+  }
+
+  function plusSlidesRiverbank(n) {
+    slideIndexRiverbank = (slideIndexRiverbank + n + slidesRiverbank.length) % slidesRiverbank.length;
+    showSlidesRiverbank();
+  }
+</script>
+
+
+</body>
+</html>

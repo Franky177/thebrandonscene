@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Nightlife – Neon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+    header {
+      background-color: #0f0c29;
+      border-bottom: 2px solid #ff00cc;
+      box-shadow: 0 2px 15px rgba(255, 0, 204, 0.3);
+    }
+    ..navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  box-sizing: border-box;
+    }
+    .logo a {
+      color: #ff00cc;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #ff00cc;
+      text-shadow: 0 0 5px #ff00cc;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #ff00cc;
+      margin-bottom: 40px;
+    }
+    .venue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .venue-card {
+      background-color: #1f1f2f;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      border: 2px solid transparent;
+    }
+    .venue-card:hover {
+      transform: scale(1.05);
+      border: 2px solid #ff00cc;
+    }
+    .venue-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .venue-card h3 {
+      color: #ff00cc;
+      margin: 10px 0 5px;
+    }
+    .venue-card p {
+      color: #eee;
+      padding: 0 10px 20px;
+    }
+    .venue-section {
+      margin-top: 60px;
+    }
+    .venue-section h2 {
+      color: #ff00cc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .slideshow-container {
+      position: relative;
+      margin-top: 15px;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 24px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    footer {
+      background-color: #0f0c29;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  
+.explore-links {
+  background-color: #1f1f2f;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid #ff00cc;
+}
+.explore-links h3 {
+  color: #ff00cc;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.explore-links ul {
+  list-style: none;
+  padding: 0;
+}
+.explore-links ul li {
+  margin: 10px 0;
+}
+.explore-links ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.explore-links ul li a:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 6px #ff00cc;
+}
+
+</style>
+</head>
+<body>
+
+<header class="neon-header">
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Brandon Scene</a></h1>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html#explore">Explore</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <h2 class="section-title">Brandon Nightlife </h2>
+
+  <div class="venue-grid">
+    
+    <a href="#guinness">
+      <div class="venue-card">
+        <img src="images/guinness-tavern.jpg" alt="Guinness Tavern">
+        <h3>Guinness Tavern</h3>
+        <p>Live sports, cold drinks, and local pub vibes.</p>
+      </div>
+    </a>
+    <a href="#houstons">
+      <div class="venue-card">
+        <img src="images/houstons.png" alt="Houstons Nightclub">
+        <h3>Houstons Nightclub</h3>
+        <p>DJs, dancing, and the best late-night atmosphere in Brandon.</p>
+      </div>
+    </a>
+    <a href="#dock">
+      <div class="venue-card">
+        <img src="images/dock.jpg" alt="The Dock on Princess">
+        <h3>The Dock on Princess</h3>
+        <p>High-end cocktails, casual meals, and patio space in summer.</p>
+      </div>
+    </a>
+   
+    <a href="#roadhouse">
+      <div class="venue-card">
+        <img src="images/roadhouse.png" alt="Roadhouse Nightclub">
+        <h3>Roadhouse Nightclub</h3>
+        <p>Country-themed club with live DJs and a dance floor. Great for social events and socials.</p>
+      </div>
+    </a>
+    <a href="#the40">
+      <div class="venue-card">
+        <img src="images/the40.png" alt="The 40 (at Trails West Inn)">
+        <h3>The 40 (at Trails West Inn)</h3>
+        <p>Classic bar with karaoke, live music, and weekly specials.</p>
+      </div>
+    </a>
+    
+    </a>
+    <a href="#tbirds">
+      <div class="venue-card">
+        <img src="images/tbirds.jpg" alt="T-Birds Food, Fun, Games">
+        <h3>T-Birds Food, Fun, Games</h3>
+        <p>Bowling, pool tables, arcade games, and beer — perfect for groups.</p>
+      </div>
+    </a>
+  </div>
+
+      <div id="guinness" class="venue-section">
+      <h2>Guinness Tavern</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-guinness" src="images/guinness1.jpg" alt="Guinness Tavern Image 1">
+        <img class="slide slide-guinness" src="images/guinness2.jpg" alt="Guinness Tavern Image 2">
+        <button class="nav-button prev" onclick="plusSlidesGuinness(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesGuinness(1)">❯</button>
+      </div>
+      <p>Live sports, cold drinks, and local pub vibes.</p>
+    </div>
+    
+    <div id="houstons" class="venue-section">
+      <h2>Houstons Nightclub</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-houstons" src="images/houstons1.jpg" alt="Houstons Nightclub Image 1">
+        <img class="slide slide-houstons" src="images/houstons2.png" alt="Houstons Nightclub Image 2">
+        <button class="nav-button prev" onclick="plusSlidesHoustons(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesHoustons(1)">❯</button>
+      </div>
+      <p>DJs, dancing, and the best late-night atmosphere in Brandon.</p>
+    </div>
+    
+    <div id="dock" class="venue-section">
+      <h2>The Dock on Princess</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-dock" src="images/dock1.jpg" alt="The Dock on Princess Image 1">
+        <img class="slide slide-dock" src="images/dock2.jpg" alt="The Dock on Princess Image 2">
+        <button class="nav-button prev" onclick="plusSlidesDock(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesDock(1)">❯</button>
+      </div>
+      <p>High-end cocktails, casual meals, and patio space in summer.</p>
+    </div>
+           
+    <div id="roadhouse" class="venue-section">
+      <h2>Roadhouse Nightclub</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-roadhouse" src="images/roadhouse1.png" alt="Houston’s Country Roadhouse Image 1">
+        <img class="slide slide-roadhouse" src="images/roadhouse2.png" alt="Houston’s Country Roadhouse Image 2">
+        <button class="nav-button prev" onclick="plusSlidesRoadhouse(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesRoadhouse(1)">❯</button>
+      </div>
+      <p>Country-themed club with live DJs and a dance floor. Great for social events and socials.</p>
+    </div>
+    
+    <div id="the40" class="venue-section">
+      <h2>The 40 Nightclub (at Trails West Inn)</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-the40" src="images/the401.png" alt="The 40 (at Trails West Inn) Image 1">
+        <img class="slide slide-the40" src="images/the402.jpg" alt="The 40 (at Trails West Inn) Image 2">
+        <button class="nav-button prev" onclick="plusSlidesThe40(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesThe40(1)">❯</button>
+      </div>
+      <p>Classic bar with karaoke, live music, and weekly specials.</p>
+    </div>
+            
+    <div id="tbirds" class="venue-section">
+      <h2>T-Birds Food, Fun, Games</h2>
+      <div class="slideshow-container">
+        <img class="slide slide-tbirds" src="images/tbirds1.jpg" alt="T-Birds Food, Fun, Games Image 1">
+        <img class="slide slide-tbirds" src="images/tbirds2.jpg" alt="T-Birds Food, Fun, Games Image 2">
+        <button class="nav-button prev" onclick="plusSlidesTbirds(-1)">❮</button>
+        <button class="nav-button next" onclick="plusSlidesTbirds(1)">❯</button>
+      </div>
+      <p>Bowling, pool tables, arcade games, and beer — perfect for groups.</p>
+    </div>
+    
+</div>
+
+
+<section class="explore-links">
+  <h3>Keep Exploring Brandon Scene</h3>
+  <ul>
+    <li><a href="thingstodo.html">Top Things to Do in Brandon</a></li>
+    <li><a href="events.html">Upcoming Events</a></li>
+    <li><a href="brandon-nightlife.html">Nightlife</a></li>
+    <li><a href="flagship-events.html">Flagship Events</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Brandon Scene. All rights reserved.</p>
+</footer>
+
+<script>
+  function showSlides(slides, index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "block" : "none";
+    });
+  }
+  
+  let slideIndexGuinness = 0;
+  const slidesGuinness = document.querySelectorAll(".slide-guinness");
+  showSlides(slidesGuinness, slideIndexGuinness);
+
+  function plusSlidesGuinness(n) {
+    slideIndexGuinness = (slideIndexGuinness + n + slidesGuinness.length) % slidesGuinness.length;
+    showSlides(slidesGuinness, slideIndexGuinness);
+  }
+
+  let slideIndexHoustons = 0;
+  const slidesHoustons = document.querySelectorAll(".slide-houstons");
+  showSlides(slidesHoustons, slideIndexHoustons);
+
+  function plusSlidesHoustons(n) {
+    slideIndexHoustons = (slideIndexHoustons + n + slidesHoustons.length) % slidesHoustons.length;
+    showSlides(slidesHoustons, slideIndexHoustons);
+  }
+
+  let slideIndexDock = 0;
+  const slidesDock = document.querySelectorAll(".slide-dock");
+  showSlides(slidesDock, slideIndexDock);
+
+  function plusSlidesDock(n) {
+    slideIndexDock = (slideIndexDock + n + slidesDock.length) % slidesDock.length;
+    showSlides(slidesDock, slideIndexDock);
+  }
+
+  let slideIndexFirehouse = 0;
+  const slidesFirehouse = document.querySelectorAll(".slide-firehouse");
+  showSlides(slidesFirehouse, slideIndexFirehouse);
+
+  function plusSlidesFirehouse(n) {
+    slideIndexFirehouse = (slideIndexFirehouse + n + slidesFirehouse.length) % slidesFirehouse.length;
+    showSlides(slidesFirehouse, slideIndexFirehouse);
+  }
+
+  let slideIndexRoadhouse = 0;
+  const slidesRoadhouse = document.querySelectorAll(".slide-roadhouse");
+  showSlides(slidesRoadhouse, slideIndexRoadhouse);
+
+  function plusSlidesRoadhouse(n) {
+    slideIndexRoadhouse = (slideIndexRoadhouse + n + slidesRoadhouse.length) % slidesRoadhouse.length;
+    showSlides(slidesRoadhouse, slideIndexRoadhouse);
+  }
+
+  let slideIndexThe40 = 0;
+  const slidesThe40 = document.querySelectorAll(".slide-the40");
+  showSlides(slidesThe40, slideIndexThe40);
+
+  function plusSlidesThe40(n) {
+    slideIndexThe40 = (slideIndexThe40 + n + slidesThe40.length) % slidesThe40.length;
+    showSlides(slidesThe40, slideIndexThe40);
+  }
+
+  let slideIndexChapters = 0;
+  const slidesChapters = document.querySelectorAll(".slide-chapters");
+  showSlides(slidesChapters, slideIndexChapters);
+
+  function plusSlidesChapters(n) {
+    slideIndexChapters = (slideIndexChapters + n + slidesChapters.length) % slidesChapters.length;
+    showSlides(slidesChapters, slideIndexChapters);
+  }
+
+  let slideIndexTbirds = 0;
+  const slidesTbirds = document.querySelectorAll(".slide-tbirds");
+  showSlides(slidesTbirds, slideIndexTbirds);
+
+  function plusSlidesTbirds(n) {
+    slideIndexTbirds = (slideIndexTbirds + n + slidesTbirds.length) % slidesTbirds.length;
+    showSlides(slidesTbirds, slideIndexTbirds);
+  }
+
+</script>
+
+</body>
+</html>

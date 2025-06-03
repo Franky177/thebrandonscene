@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor Activities | Brandon Scene</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('images/outdoor-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      background-color: #800020;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px 0;
+      margin: 0;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links li a:hover {
+      color: #00cc66;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #00cc66;
+      margin: 40px 0;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+    .activity-card {
+      background-color: #1f1f2f;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+    .activity-card:hover {
+      border: 2px solid #00cc66;
+    }
+    .activity-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .activity-card h3 {
+      color: #00cc66;
+      margin: 10px 0 5px;
+    }
+    .activity-card p {
+      color: #eee;
+      padding: 0 10px 20px;
+    }
+    .activity-section {
+      margin: 60px 20px;
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .activity-section h2 {
+      color: #00cc66;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .activity-section p {
+      color: #ccc;
+    }
+    footer {
+      background-color: #0f0c29;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">BRANDON SCENE</a></h1>
+  <ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="index.html#explore">Explore</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</header>
+
+<h2 class="section-title">Explore Outdoor Adventures in Brandon</h2>
+<div class="card-grid">
+  <a href="#trails">
+    <div class="activity-card">
+      <img src="images/trails.jpg" alt="Trails & Nature Walks">
+      <h3>Trails & Nature Walks</h3>
+      <p>Discover beautiful natural trails for hiking and birdwatching.</p>
+    </div>
+  </a>
+  <a href="#water">
+    <div class="activity-card">
+      <img src="images/water.jpg" alt="Water Activities">
+      <h3>Water Activities</h3>
+      <p>Canoeing, kayaking, and local fishing spots for water lovers.</p>
+    </div>
+  </a>
+  <a href="#sports">
+    <div class="activity-card">
+      <img src="images/sports.jpeg" alt="Sports & Recreation">
+      <h3>Sports & Recreation</h3>
+      <p>Basketball, disc golf, and more to keep you active outdoors.</p>
+    </div>
+  </a>
+  <a href="#winter">
+    <div class="activity-card">
+      <img src="images/winter.jpg" alt="Winter Fun">
+      <h3>Winter Fun</h3>
+      <p>Enjoy skating trails and cross-country skiing during snowy months.</p>
+    </div>
+  </a>
+</div>
+
+<div id="trails" class="activity-section">
+  <h2> Trails & Nature Walks</h2>
+  <p><strong>Brandon Hills Wildlife Area</strong> – Brandon Hills Wildlife Area
+Enjoy 5km+ of marked trails, suitable for hiking and wildlife viewing year-round.
+Hours: Open Daily, Dawn to Dusk
+ <br><strong>Location:</strong> Location: Hwy 10 South, 10 minutes from Brandon.</p>
+  <p><strong>Riverbank Discovery Trails</strong> – Scenic river walks and nature viewing areas. <br><strong>Location:</strong> 545 Conservation Dr. <a href="https://riverbank.mb.ca" target="_blank">riverbank.mb.ca</a></p>
+</div>
+
+<div id="water" class="activity-section">
+  <h2> Water Activities</h2>
+  <p><strong>Canoeing/Kayaking</strong> on the Assiniboine River from Riverbank Centre. <br><strong>Location:</strong> 545 Conservation Dr. <a href="https://riverbank.mb.ca" target="_blank">riverbank.mb.ca</a></p>
+  <p><strong>Fishing Spots</strong> – Dinsdale Park and stretches of the river offer fishing opportunities.</p>
+</div>
+
+<div id="sports" class="activity-section">
+  <h2> Sports & Recreation</h2>
+  <p><strong>Disc Golf at Queen Elizabeth Park</strong> – Open for casual or competitive players. <br><strong>Location:</strong> 23rd Street East</p>
+  <p><strong>Basketball & Tennis Courts</strong> – Found throughout Brandon parks like Rideau and Valleyview.</p>
+</div>
+
+<div id="winter" class="activity-section">
+  <h2>❄️ Winter Activities</h2>
+  <p><strong>Cross-country Skiing at Brandon Hills</strong> – Maintained by Brandon Nordic Ski Club. <a href="https://ccsam.ca/where-to-ski/trails/groups/brandon-riverbank/" target="_blank">skibrandon.ca</a></p>
+  <p><strong>Riverbank Skating Trail</strong> – A local favorite with lights and warming shacks.</p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Brandon Scene. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

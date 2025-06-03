@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Ad | Brandon Scene</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #800020;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #800020;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #a32132;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit Your Ad</h1>
+  <form action="submit_ad.php" method="POST" enctype="multipart/form-data">
+    <label for="business">Business or Individual Name</label>
+    <input type="text" id="business" name="business" required>
+
+    <label for="email">Contact Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="category">Ad Category</label>
+    <select id="category" name="category" required>
+      <option value="events">Events</option>
+      <option value="services">Services</option>
+      <option value="promotions">Promotions</option>
+      <option value="others">Others</option>
+    </select>
+
+    <label for="message">Ad Message/Description</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <label for="image">Upload Image (JPG/PNG, Max 3MB)</label>
+    <input type="file" id="image" name="image" accept="image/jpeg, image/png" required>
+
+    <label for="link">Website or Social Link (optional)</label>
+    <input type="text" id="link" name="link" placeholder="Optional link (website, social media)">
+
+    <label for="duration">How many days should the ad run?</label>
+<input type="number" id="duration" name="duration" min="1" max="365" value="30">
+
+<label>
+      <input type="checkbox" name="terms" required>
+      I agree to the <a href="#" target="_blank">terms and conditions</a>.
+    </label>
+
+    <button type="submit">Submit for Approval</button>
+  </form>
+</body>
+</html>

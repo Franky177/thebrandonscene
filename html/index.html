@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brandon Events | Things To Do in Brandon</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    header {
+      background-color: #800020;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px 0;
+      margin: 0;
+    }
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links li a:hover {
+      color: #00cc66;
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2515DYERC0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2515DYERC0');
+  </script>
+</head>
+<body>
+
+<!-- Hybrid Responsive Navbar -->
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* Desktop Nav Bar */
+  .navbar {
+    background-color: #800020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    color: white;
+    position: relative;
+  }
+
+  .navbar .logo a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* Hamburger Icon */
+  .menu-toggle {
+    display: none;
+    font-size: 1.6rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Side Drawer */
+  .side-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .side-drawer.active {
+    left: 0;
+  }
+
+  .side-drawer a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #333;
+  }
+
+  .side-drawer a:hover {
+    background-color: #222;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+  }
+</style>
+
+<div class="navbar">
+  <div class="logo"><a href="/">Brandon Scene</a></div>
+  <button class="menu-toggle" onclick="toggleDrawer()">☰</button>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="events.html">Events</a>
+    <a href="flagship-events.html">Flagship</a>
+    <a href="brandon-nightlife.html">Nightlife</a>
+    <a href="outdoor.html">Outdoor</a>
+    <a href="community-ads.html">Community Ads</a>
+    <a href="submit-ad.html">Submit Ad</a>
+  </div>
+</div>
+
+<div class="overlay" id="drawerOverlay" onclick="toggleDrawer()"></div>
+
+<div class="side-drawer" id="sideDrawer">
+  <a href="/">🏠 Home</a>
+  <a href="events.html">🎟️ Events</a>
+  <a href="flagship-events.html">⭐ Flagship</a>
+  <a href="brandon-nightlife.html">🌙 Nightlife</a>
+  <a href="outdoor.html">🌲 Outdoor</a>
+  <a href="community-ads.html">📣 Community Ads</a>
+  <a href="submit-ad.html">📤 Submit Ad</a>
+  <a href="contact.html">📞 Contact</a>
+</div>
+
+<script>
+  function toggleDrawer() {
+    document.getElementById('sideDrawer').classList.toggle('active');
+    document.getElementById('drawerOverlay').classList.toggle('active');
+  }
+</script>
+
+<!-- Navigation Bar -->
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="container">
+<h2>Discover the Best Events and Fun Places in Brandon</h2>
+<p>Your ultimate guide to what's happening in Brandon, Manitoba!</p>
+</div>
+</section>
+<!-- Events Grid -->
+<section class="section" id="events">
+<div class="container">
+<h2 class="section-title">What's Happening</h2>
+<div class="grid">
+<div class="grid-item">
+<a href="flagship-events.html#ribfest">
+<img alt="Event 1" src="images/rib-fest.jpg"/>
+<h3>RibFest Brandon</h3>
+<p>Ribs. Music. Vibes. The city’s tastiest weekend!.</p>
+</a>
+</div>
+<div class="grid-item">
+<a href="flagship-events.html#summer-fair">
+<img alt="Manitoba Summer Fair" src="images/summer-fair.jpg"/>
+<h3>Manitoba Summer Fair</h3>
+<p>Brandon's biggest family fair with rides, food, and live shows.</p>
+</a>
+</div>
+<div class="grid-item">
+<a href="flagship-events.html#soccer">
+<img alt="Event 3" src="images/soccer.jpg"/>
+<h3>Praire Mountain Soccer League</h3>
+<p>10 teams. 1 city. Endless passion. Brandon’s fiercest soccer competition is here!</p>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Explore Brandon Section -->
+<section class="explore" id="explore">
+<div class="explore-container">
+<div class="explore-grid">
+<div class="explore-card">
+<a href="thingstodo.html">
+<img alt="Things to Do in Brandon" src="images/things -to-do-in brandon.jpg"/>
+<p>Things to Do in Brandon</p>
+</a>
+</div>
+<div class="explore-card">
+<a href="brandon-nightlife.html">
+<img alt="Brandon Nightlife" src="images/brandon-night-life.jpg"/>
+<p>Brandon Nightlife</p>
+</a>
+</div>
+<div class="explore-card">
+<a href="outdoor.html">
+<img alt="Outdoor Activities" src="images/outside-activities.jpg"/>
+<p>Outdoor Activities</p>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="section" id="about">
+<div class="container">
+<h2 class="section-title">About Brandon Scene</h2>
+<p>Brandon Scene is your number one resource for events, festivals, and things to do in Brandon. Our mission is to connect the community through fun and engaging experiences!</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="section" id="contact">
+<div class="container">
+<h2 class="section-title">Contact Us</h2>
+<form action="https://formspree.io/f/mqaqeyqv" class="contact-form" method="POST">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<input name="_next" type="hidden" value="Thankyou.html"/>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<section class="explore-links">
+<h3>Keep Exploring Brandon Scene</h3>
+<ul>
+<li><a href="thingstodo.html">Top Things to Do in Brandon</a></li>
+<li><a href="events.html">Upcoming Events</a></li>
+<li><a href="brandon-nightlife.html">Nightlife</a></li>
+<li><a href="flagship-events.html">Flagship Events</a></li>
+</ul>
+</section>
+<!-- Desktop Sidebar CTA -->
+<div id="adSidebar">
+<h4>📣 Promote Your Business</h4>
+<p>Reach locals on Brandon Scene!</p>
+<a href="submit-ad.html" target="_blank">Submit Ad →</a>
+</div>
+<!-- Mobile Bottom CTA -->
+<div id="mobileAdCTA">
+<a href="submit-ad.html">📣 Submit Your Ad</a>
+</div>
+<style>
+#adSidebar {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 220px;
+  background: #ffffff;
+  color: #1f1f2f;
+  border: 2px solid #00cc66;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1000;
+}
+#adSidebar h4 {
+  margin: 0 0 5px;
+  color: #800020;
+  font-size: 1rem;
+}
+#adSidebar p {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+}
+#adSidebar a {
+  display: inline-block;
+  background-color: #00cc66;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+#adSidebar a:hover {
+  background-color: #00994d;
+}
+
+#mobileAdCTA {
+  display: none;
+}
+@media (max-width: 768px) {
+  #adSidebar {
+    display: none;
+  }
+  #mobileAdCTA {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #00cc66;
+    text-align: center;
+    padding: 12px 0;
+    z-index: 1000;
+  }
+  #mobileAdCTA a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+</style>
+<h3 style="color:#800020; font-size:1.2rem;">📣 Promote Your Business</h3>
+<p style="font-size:0.95rem;">Get featured on Brandon Scene. Submit your ad today and reach the local crowd!</p>
+<a href="submit-ad.html" style="color:#fff; background:#00cc66; padding:8px 12px; text-decoration:none; border-radius:6px; display:inline-block; margin-top:10px;">Submit Ad →</a>
+
+<footer>
+<div class="container">
+<p>© 2025 Brandon Scene. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
